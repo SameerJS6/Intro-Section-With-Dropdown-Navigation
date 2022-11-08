@@ -238,7 +238,11 @@ main {
     justify-content: space-between;
   }
 }
-
+@media (min-width: 69em) {
+  .svg-logos {
+    width: 90%;
+  }
+}
 /* Desktop 1440p */
 @media (min-width: 82em) {
   .grid-content h1 {

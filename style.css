@@ -5,6 +5,8 @@
   --bg: hsl(0, 0%, 98%);
   --primary: hsl(0, 0%, 8%);
   --secondary: hsl(0, 0%, 41%);
+  /* --ripple: #edd556; */
+  --ripple: #4bb1da;
 
   --ff-primary: 'Epilogue', sans-serif;
 
@@ -226,12 +228,12 @@ main {
   .btn {
     margin-block-end: 5rem;
   }
-  .btn:focus {
+  /* .btn:focus-within {
     color: white;
     outline-offset: 3px;
     outline-color: var(--secondary);
     background-color: var(--secondary);
-  }
+  } */
 }
 
 @media (min-width: 82em) {
@@ -241,4 +243,31 @@ main {
   /* .btn {
     margin-block-end: 5rem;
   } */
+}
+
+
+/* Ripple Effect Here */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+span {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: var(--ripple);
+  transform: translate(-50%, -50%);
+  animation: ripples 1.5s ease infinite;
+}
+@keyframes ripples {
+  from {
+    opacity: 0.3;
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    opacity: 0;
+    width: 500px;
+    height: 500px;
+  }
 }

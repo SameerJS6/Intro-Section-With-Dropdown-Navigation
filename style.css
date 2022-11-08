@@ -207,9 +207,9 @@ main {
     font-size: var(--size-500);
   }
   .btn {
+    font-size: 1rem;
     margin-block-end: 3rem;
-    font-size: var(--size-500);
-    padding: 0.75rem 1rem 0.5rem;
+    padding: 0.5rem 0.75rem 0.35rem;
   }
   .svg-logos {
     gap: 0;
@@ -231,6 +231,8 @@ main {
   }
   .btn {
     margin-block-end: 5rem;
+    font-size: var(--size-500);
+    padding: 0.75rem 1rem 0.5rem;
   }
   .svg-logos {
     justify-content: space-between;

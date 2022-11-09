@@ -102,10 +102,10 @@ select {
 
 /* General Styling  */
 body {
-  display: grid;
+  /* display: grid; */
   font-weight: 500;
   margin-inline: auto;
-  place-content: center;
+  /* place-content: center; */
   background: var(--bg);
   transition: all 500ms ease;
   font-family: var(--ff-primary);
@@ -114,17 +114,20 @@ body {
 /* Header & Navbar  */
 header {
   display: flex;
-  padding-block: 0rem 1rem;
+  padding-block: 2rem 1rem;
   padding-inline: 2rem;
   align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
   /* outline: 2px solid limegreen; */
   justify-content: space-between;
 }
 nav {
-  width: 94%;
+  width: 91%;
   display: flex;
   align-items: center;
-  padding-inline-start: 1rem;
+  /* padding-inline-start: 1rem; */
   /* outline: 2px solid black; */
   justify-content: space-between;
 }
@@ -457,8 +460,14 @@ main {
 }
 /* Desktop 1440p */
 @media (min-width: 82em) {
+  nav {
+    width: 93%;
+    padding-inline-start: 1;
+  }
   .grid-content h1 {
     font-size: 5rem;
+    max-width: 13ch;
+    width: 100%;
   }
   .svg-logos {
     width: 78%;

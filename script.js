@@ -4,8 +4,8 @@ const Ripples = document.querySelectorAll(".ripple");
 
 HamburgerToggle.addEventListener("click", ()=> {
   HamburgerToggle.classList.toggle("is-active");
-  document.body.classList.toggle("hidden")
-  NavBar.classList.toggle("active")
+  document.body.classList.toggle("hidden");
+  NavBar.classList.toggle("active");
 })
 
 Ripples.forEach((button) => {

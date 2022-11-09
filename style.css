@@ -114,9 +114,10 @@ body {
 /* Header & Navbar  */
 header {
   display: flex;
-  padding: 2rem 2rem 1rem;
+  padding-block: 0rem 1rem;
+  padding-inline: 2rem;
   align-items: center;
-  outline: 2px solid limegreen;
+  /* outline: 2px solid limegreen; */
   justify-content: space-between;
 }
 nav {
@@ -183,11 +184,15 @@ nav {
   display: none;
 }
 @media (max-width: 50em) {
+  .hidden {
+    overflow: hidden;
+  }
   header {
     padding: 1rem 0 0 1rem;
   }
   nav {
     z-index: 1;
+    overflow: hidden;
     display: none;
     position: absolute;
     padding-inline: 0;
@@ -198,7 +203,6 @@ nav {
     justify-content: flex-start;
     width: 70%;
     height: 100vh;
-    overflow: hidden;
     background-color: var(--bg);
     transition: var(--transition);
   }
@@ -241,6 +245,9 @@ nav {
   }
   .nav-btn:nth-child(1) {
     margin-inline-end: 0rem;
+  }
+  .svg-logos {
+    margin-block-end: 0.5rem;
   }
   .hamburger {
     padding: 1rem;

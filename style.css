@@ -207,7 +207,7 @@ nav {
     width: 70%;
     height: 100vh;
     background-color: var(--bg);
-    transition: var(--transition);
+    transition: var(--transition-500ms);
   }
   .active {
     display: flex;

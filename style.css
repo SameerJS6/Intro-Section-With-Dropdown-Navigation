@@ -154,8 +154,7 @@ nav {
   background-color: transparent;
   transition: var(--transition-500ms);
 }
-.nav-list li a:hover,
-.drop-links {
+.nav-list li a:hover {
   color: var(--primary);
 }
 .nav-btn {
@@ -367,15 +366,21 @@ nav {
 .dropdown-content {
   gap: 0.75rem;
   display: flex;
-  font-size: 0.9rem;
+  margin-block-end: 0.25rem;
+  cursor: pointer;
+  font-size: 0.95rem;
   align-items: center;
   color: var(--secondary);
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  transition: var(--transition-500ms);
+}
+.dropdown-content:hover {
+  color: var(--primary);
 }
 .dropdown-wrapper-content {
   color: var(--secondary);
 }
-.dropdown-wrapper-content p {
+.dropdown-wrapper-content a {
   margin-block-end: 0.25rem;
 }
 /* Main Section  */
